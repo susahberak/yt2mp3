@@ -1,33 +1,12 @@
 
 # YouTube Converter
 
-A cool youtoube converter made by [MrMothDevs](https://github.com/MrMothDevs).
+A cool youtoube converter made by [SusahBerak](https://github.com/susahberak).
 
 Currently supporting:
 | Format        | Bitrate           
 | ------------- |:-------------:| 
 |   mp3         | 64 - 320kbs   | 
 |   mp4 (soon)  |               | 
-
-
-
-## Installation
-
-Install everyting with npm i 
- ```bash
- public/script.js
-   Change: 
-    // heroku endpoints
-      const server_endpoint = 'https://youtube-convertermd.herokuapp.com/'
-      const download_endpoint = 'https://youtube-convertermd.herokuapp.com/download/'
-      const get_info_endpoint = 'https://youtube-convertermd.herokuapp.com/getInfo/'
-   To:
-    Your current endpoints   
- ```
-```bash
-  npm install i
-  node app
-```
-    
 
 
