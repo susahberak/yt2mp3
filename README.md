@@ -11,19 +11,6 @@ Currently supporting:
 
 
 
-
-
-## Authors
-
-- [@MrCoku](https://www.github.com/MrCoku) - Frontend
-- [@Ergin](https://www.github.com/remixor) - Backend
-
-
-## Demo
-
-https://ytconverter.vercel.app
-
-
 ## Installation
 
 Install everyting with npm i 
