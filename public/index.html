@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="YouTube Mp3 Converter built with NodeJs">
+    <meta name="keywords" content="HTML, CSS, JavaScript, YouTube converter, Mp3 downloader">
+    <meta name="author" content="MrMoth Devs">
+    
+    <title>YouTube Converter</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+
+    <!-- <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png"> -->
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <!-- <link rel="manifest" href="favicon/site.webmanifest"> -->
+</head>
+<body>
+    <div class="typewriter">
+        <h1>YouTube Converter</h1>
+    </div>
+    <div class="main-container">
+        <div id="url-form-container" class="url-container">
+            <p class="error-box" id="url-error-box">
+                Sorry, the url you provided is incorrect!
+            </p>
+            <form method="GET" class="convert-form">
+                <input type="text" name="url" class="url-input" id="url-text-input" placeholder="https://www.youtube.com/watch?v=Vd9GUJxPHDc">
+                <input type="submit" class="btn submit-btn" id="submit-btn" name="submit" value="Find">
+            </form>
+        </div>
+        
+        
+        <div class="loading-ring" id="get-info-ring"><div></div><div></div><div></div><div></div></div>
+        
+        <div class="download-container" id="download-container">
+            <div class="img-container" id="img-container">
+                <img class="thumbnail_img" id="thumbnail_img" src="" alt="thumbnail" width="600" >
+                
+                <p class="error-box song-cut-time-error-box" id="song-cut-time-error-box" style="display: none;">
+                    Wrong start or end time provided!
+                </p>
+                <form class="song-cut-form">
+                    <div>
+                        <p>Start</p>
+                        <input type="text" name="song-start" id="song-start-input" placeholder="0:00">
+                    </div>
+                    <div>
+                        <p>End</p>
+                        <input type="text" name="song-end" id="song-end-input" placeholder="0:00">
+                    </div>
+                </form>
+            </div>
+            <div id="download-info-container">
+                <ul class="song-info-list">
+                    <li id="song-title">Some long song name</li>
+                    <li id="artist">Tove Lo</li>
+                    <li id="song-duration">05:22</li>
+                </ul>
+                
+                <select class="custom-select" name="bitrate-select" id="bitrate-select">
+                    <optgroup label="mp3">
+                        <option value="64k">mp3 64kbps</option>
+                        <option value="128k">mp3 128kbps</option>
+                        <option value="192k">mp3 192kbps</option>
+                        <option value="256k">mp3 256kbps</option>
+                        <option value="320k">mp3 320kbps</option>
+                    </optgroup>
+                </select>
+                
+                <div class="loading-ring" id="convert-ring"><div></div><div></div><div></div><div></div></div>
+
+                
+                <button class="btn" id="convert-btn">Convert</button>
+                
+                <a id="download-btn" download href="" target="_blank">
+                    <button class="btn">Download</button>
+                </a>
+            </div>
+        </div>
+    </div>
+    <footer> 
+        <div class="social-media">
+            <a href="https://www.instagram.com/mrmothdevs/" target="_blank" rel="noopener noreferrer"><i class="fab fa-instagram"></i></a>
+            <a href="https://github.com/MrMothDevs" target="_blank" rel="noopener noreferrer"><i class="fab fa-github"></i></a>
+            <a href="https://www.youtube.com/c/mrmothdevs" target="_blank" rel="noopener noreferrer"><i class="fab fa-youtube"></i></a>
+        </div>
+        Made with ❤ by <a href="https://linktr.ee/mrmothdevs" rel="noopener noreferrer" target="_blank">MrMothDevs</a> 2021</footer> 
+    <script src="script.js"></script>
+</body>
+</html>
