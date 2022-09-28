@@ -36,7 +36,7 @@ const song_cut_time_error_box = document.getElementById("song-cut-time-error-box
 
 let songInfo = null
 
-const EMPTY_URL_ERROR = "You cannot send empty url!"
+const EMPTY_URL_ERROR = "Url tidak valid, silakan coba lagi!"
 
 window.onload = () => {
     var form = document.querySelector("form");
