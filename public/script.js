@@ -1,9 +1,9 @@
 var browser = browser || chrome
 
 // heroku endpoints
- const server_endpoint = 'https://youtube-convertermd.herokuapp.com/'
- const download_endpoint = 'https://youtube-convertermd.herokuapp.com/download/'
- const get_info_endpoint = 'https://youtube-convertermd.herokuapp.com/getInfo/'
+ const server_endpoint = 'https://savemp3.herokuapp.com/'
+ const download_endpoint = 'https://savemp3.herokuapp.com/download/'
+ const get_info_endpoint = 'https://savemp3.herokuapp.com/getInfo/'
 const wakeup_dlp_endpoint = 'https://ytdlpmd.herokuapp.com/wakeup'
 
 // locally
