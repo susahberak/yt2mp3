@@ -28,7 +28,7 @@ async function getInfo(url){
     }
     catch(err){
         console.log(err)
-        return {error: "Video with that url doesn't exist!"}
+        return {error: "Video dengan url itu tidak ada!"}
     }
 
     // console.log(info.videoDetails);
