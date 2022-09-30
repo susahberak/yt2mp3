@@ -25,11 +25,11 @@
 
     // Default settings
     var defaults = {
-        selectorToggle: '[data-modal]',
-        selectorWindow: '[data-modal-window]',
-        selectorClose: '[data-modal-close]',
+        selectorToggle: '[data-step]',
+        selectorWindow: '[data-step-window]',
+        selectorClose: '[data-step-close]',
         modalActiveClass: 'active',
-        modalBGClass: 'modal-bg',
+        modalBGClass: 'step-bg',
         preventBGScroll: true,
         preventBGScrollHtml: true,
         preventBGScrollBody: true,
@@ -212,11 +212,11 @@
     var createModalBg = function () {
 
         // If modal BG already exists, don't create another one
-        if ( document.querySelector('[data-modal-bg]') ) return;
+        if ( document.querySelector('[data-step-bg]') ) return;
 
         // Define the modal background
         var modalBg = document.createElement('div');
-        modalBg.setAttribute('data-modal-bg', true);
+        modalBg.setAttribute('data-step-bg', true);
         modalBg.classList.add( settings.modalBGClass );
 
         // Append the modal background to the page
@@ -229,7 +229,7 @@
      * @private
      */
     var removeModalBg = function () {
-        var modalBg = document.querySelector( '[data-modal-bg]' );
+        var modalBg = document.querySelector( '[data-step-bg]' );
         if ( !modalBg ) return;
         document.body.removeChild( modalBg );
     };
