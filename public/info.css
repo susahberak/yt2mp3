@@ -42,16 +42,16 @@ button {
   padding: 0.4rem 0.8rem;
   font-size: 1rem;
   cursor: pointer;
-  border: 1px solid #0e48fe;
+  border: 1px solid #DA2B26;
   border-radius: 0.2rem;
 }
 
 .btn-primary {
-  background-color: #0e48fe;
+  background-color: #DA2B26;
   color: white;
 }
 
 .btn-secondary {
   background-color: transparent;
-  color: #0e48fe;
+  color: #DA2B26;
 }
