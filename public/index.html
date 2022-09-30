@@ -18,7 +18,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="info.css">
-    <link rel="stylesheet" href="tutorial.css">
+    <link rel="stylesheet" href="step.css">
     
 
     <!-- <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
@@ -107,16 +107,34 @@
 <p>Selamat datang di Youtube Converter Mp3! Mulailah dengan melihat tutorial langkah demi langkah kami atau masuk ke tampilan beranda.</p>
 <div class="modal__buttons">
 <button class="btn-secondary" id="modal-skip">Ok</button>
-<button class="btn-primary">Tutorial</button>
+<button class="btn-primary" data-modal-open="modal_1">Tutorial</button>
 </div>
 </div>
 </div>
 
+<!-- dialog markup -->
+          <div id="modal_1" data-modal>
+            <div data-modal-document>
+              <h2>
+                Privacy Information
+              </h2>
+
+              <div>
+                <p>
+                  We heard you like to know about updates to privacy policies.
+                  So you should be pleased to know we've updated our privacy policy.
+                </p>
+                <p>
+                  Please contain your excitement.
+                </p>
+              </div>
+            </div>
+          </div>
+          <!-- end dialog markup -->
+
     <script src="script.js"></script>
     <script src="info.js"></script>
-    <script src="tutorial.js"></script>
-    <script>
-    modals.init();
-    </script>
+    <script src="step.js"></script>
+    
 </body>
 </html>
