@@ -2,7 +2,7 @@
  * Modal windows
  */
 
-.modal {
+.step {
   background-color: #ffffff;
   border: 0.0725em solid #e5e5e5;
   border-radius: 0.0725em;
@@ -16,12 +16,12 @@
 
 @media (min-width: 40em) {
 
-    .modal {
+    .step {
     max-width: 98%;
   }
 }
 
-.modal.active {
+.step.active {
   display: block;
   height: 100%;
   left: 0;
@@ -36,7 +36,7 @@
 
 @media (min-width: 30em) {
   
-  .modal.active {
+  .step.active {
     height: auto;
     left: 3%;
     margin-left: auto;
@@ -48,21 +48,21 @@
 
 @media (min-width: 40em) {
   
-  .modal.active {
+  .step.active {
     left: 8%;
     right: 8%;
   }
   
-  .modal.active.modal-medium {
+  .step.active.step-medium {
     width: 35em;
   }
   
-  .modal.active.modal-small {
+  .step.active.step-small {
     width: 25em;
   }
 }
 
-.modal:focus {
+.step:focus {
   outline: none;
 }
 
@@ -70,7 +70,7 @@
  * Modal background
  */
 
-.modal-bg {
+.step-bg {
   background-color: #272727;
   bottom: 0;
   position: fixed;
